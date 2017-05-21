@@ -56,4 +56,4 @@ class CRC16SICK(object):
 
             return crc_value
         except Exception as e:
-            print("EXCEPTION(calculate): {}".format(e))
+            print(("EXCEPTION(calculate): {}".format(e)))

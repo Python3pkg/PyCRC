@@ -23,19 +23,19 @@ if __name__ == "__main__":
     # DECIMAL EXAMPLE
     target = '12341234'
 
-    print("The results for {} are".format(target))
-    print("{:20s} {:10X}".format(
-        'CRC-CCITT(XModem)', CRCCCITT().calculate(target)))
-    print("{:20s} {:10x}".format(
-        'CRC-CCITT(0xFFFF)', CRCCCITT(version="FFFF").calculate(target)))
-    print("{:20s} {:10x}".format(
-        'CRC-CCITT(0x1D0F)', CRCCCITT(version="1D0F").calculate(target)))
-    print("{:10s} {:20X}".format('CRC-16', CRC16().calculate(target)))
-    print("{:20s} {:10X}".format(
-        'CRC-16 (Modbus)', CRC16(modbus_flag=True).calculate(target)))
-    print("{:20s} {:10X}".format(
-        'CRC-16 (SICK)', CRC16SICK().calculate(target)))
-    print("{:20s} {:10X}".format('CRC-DNP', CRC16DNP().calculate(target)))
-    print("{:20s} {:10X}".format('CRC-32', CRC32().calculate(target)))
-    print("{:20s} {:10X}".format(
-        'CRC-16 (Kermit)', CRC16Kermit().calculate(target)))
+    print(("The results for {} are".format(target)))
+    print(("{:20s} {:10X}".format(
+        'CRC-CCITT(XModem)', CRCCCITT().calculate(target))))
+    print(("{:20s} {:10x}".format(
+        'CRC-CCITT(0xFFFF)', CRCCCITT(version="FFFF").calculate(target))))
+    print(("{:20s} {:10x}".format(
+        'CRC-CCITT(0x1D0F)', CRCCCITT(version="1D0F").calculate(target))))
+    print(("{:10s} {:20X}".format('CRC-16', CRC16().calculate(target))))
+    print(("{:20s} {:10X}".format(
+        'CRC-16 (Modbus)', CRC16(modbus_flag=True).calculate(target))))
+    print(("{:20s} {:10X}".format(
+        'CRC-16 (SICK)', CRC16SICK().calculate(target))))
+    print(("{:20s} {:10X}".format('CRC-DNP', CRC16DNP().calculate(target))))
+    print(("{:20s} {:10X}".format('CRC-32', CRC32().calculate(target))))
+    print(("{:20s} {:10X}".format(
+        'CRC-16 (Kermit)', CRC16Kermit().calculate(target))))

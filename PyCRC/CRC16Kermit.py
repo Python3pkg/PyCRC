@@ -44,7 +44,7 @@ class CRC16Kermit(object):
 
             return crc_value
         except Exception as e:
-            print("EXCEPTION(calculate): {}".format(e))
+            print(("EXCEPTION(calculate): {}".format(e)))
 
     def init_crc16kermit(self):
         """the algorithm use tables with precalculated values"""

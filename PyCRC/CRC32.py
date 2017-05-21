@@ -41,7 +41,7 @@ class CRC32(object):
 
             return crc_value
         except Exception as e:
-            print("EXCEPTION(calculate): {}".format(e))
+            print(("EXCEPTION(calculate): {}".format(e)))
 
     def init_crc32(self):
         """The algorithm use tables with precalculated values"""
